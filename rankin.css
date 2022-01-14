@@ -1,0 +1,46 @@
+*{
+    font-family: 'Geostar Fill', cursive;
+    
+    color: rgb(13, 226, 13);
+    margin: 0px;
+    padding: 0px;
+    
+}
+a{
+    text-decoration: none;
+}
+body{
+    
+    background-image:url(images/wallpaperbetter.jpg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center ;
+}
+table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center ;
+    border-left: 1px solid rgb(13, 226, 13);
+    border-right: 1px solid rgb(13, 226, 13);
+    text-align: center;
+    margin-top: -100px;
+}
+th{
+    border-top: 1px solid rgb(13, 226, 13);
+    border-bottom: 1px dashed rgb(13, 226, 13);
+}
+td{
+    border-bottom: 1px solid rgb(13, 226, 13); 
+}
+button{
+    all:unset;
+    background-color: rgb(24, 23, 23);
+    box-sizing: border-box;
+    padding: 2px 5px;
+    border:1px solid rgb(13, 226, 13);
+    margin-top: 20px;
+    text-decoration: none;
+}

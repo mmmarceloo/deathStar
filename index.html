@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEATH STAR</title>
+</head>
+<body>
+    <audio  class="musica" autoplay loop>
+        <source src="sound/John_Williams_Star_Wars_Main_Title_Ringtone_(by Fringster.com).mp3" type="">
+
+      </audio>
+    
+      
+    <h1>DEATH STAR</h1>
+    <div class="box-musica"> 
+        <button class="botaoMusica" onclick='musica()'>Música ON</button> </div>
+    </div>
+    <div class="instrucoes">
+        <div class="instrucoes-texto">
+            <h3>Escolha suas ações de forma a adivinhar a resposta do inimigo e assim destruir a Estrela da Morte.</h3>
+            <p>Açoes possiveis: </p>
+            <p>1 - Atirar</p>
+            <p>2 - Desviar</p>
+            <p>3 - Acelerar</p></br>
+            
+            <button id="botao">À BATALHA!</button> </br></br>
+            <a href="rankin.php"><button>RANKING</button></a>
+        
+        </div>
+
+    </div>
+    
+    <div class="gravarJogador">
+        <div class="gravarJogador-box">
+            <h5>DIGITE SEU NOME</h5>
+            <form  method="post" action="db.php">
+                <input class="gravarJogador-input" type="text" name="nome" required></br>
+                <h5>SEU SCORE</h5>
+                <input class="gravarJogador-input" type="number" name="score" id="scoreFinal" value="200" readonly>
+                <input type="submit" class="botaoGravar" value="salvar">
+
+            </form>
+        </div>
+    </div>
+    <div class="vida">
+            <h3>Vida</h3>
+            <div class="box vida1"></div>
+            <div class="box vida2"></div>
+            <div class="box vida3"></div>
+    </div>   
+    <div class="score">0</div>
+    
+    <div class="conteiner">
+
+        
+        
+        <div class="comandos">
+            <button onclick="acao('atirar')">Atirar</button>
+            <button onclick="acao('desviar')">Desviar</button>
+            <button onclick="acao('acelerar')">Acelerar</button>
+        </div> 
+        <div class="respostaInimigo">
+                        
+        </div> 
+        <div class="resultadoDaBatalhaGanha">
+           
+            <h3>Ganhou a rodada</h3>
+            <button onclick='ativaControle()'>OK</button>
+        </div>
+
+        <div class="resultadoDaBatalhaPerde">
+            
+            <h3>Foi atingido!</h3>
+            <button onclick='ativaControle()'>OK</button>
+        </div>
+        <div class="vitoria">
+            
+            <h3>VITORIA!</h3>
+            <p>voltar ao inicio</p>
+            <button onclick="gravaPlayer()">OK</button>
+        </div>
+        <div class="derrota">
+           
+            <h3>DERROTA!</h3>
+            <p>voltar ao inicio</p>
+            <button onclick="gravaPlayer()">OK</button>
+        </div>
+
+        <div class="inimigos">
+            <div class="deathStar">
+                <img id="death" src="images/deathStar.png" alt="deathStar">
+
+                <div class="explosaoDeath1"></div>
+                <div class="explosaoDeath2"></div>
+                <div class="explosaoDeath3"></div>
+                <div class="destuindo-death"></div>
+
+            </div>
+            <div class="tie">
+                
+            </div>
+        </div>
+        <div class="mocinhos">
+            <div class="x-Wing"></div>
+            <div class="explosaoWing1"></div>
+            <div class="explosaoWing2"></div>
+            <div class="explosaoWing3"></div>
+            <div class="destuindo-wing"></div>
+        </div>
+        
+        
+    
+    <script src="script.js"></script>
+</body>
+</html>

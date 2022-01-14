@@ -1,0 +1,674 @@
+*{
+    font-family: 'Geostar Fill', cursive;
+    
+    color: rgb(13, 226, 13);
+    margin: 0px;
+    padding: 0px;
+    
+}
+a{
+    text-decoration: none;
+}
+body{
+    
+    background-color: rgb(207, 201, 201);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input{
+    width: 110px;
+    height: 20px;
+}
+.box-musica{
+    
+    width: 140px;
+    height: 81vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+.botaoMusica{
+    all: unset;
+    background-color: rgb(13, 226, 13);
+    color:rgb(24, 23, 23);
+    padding: 2px;
+    box-sizing: border-box;
+    z-index: 6;
+    cursor:pointer;
+}
+.gravarJogador{
+    display:none;
+    width: 100vw;
+    height: 70vh;
+    
+    position:absolute;
+    margin-top: 37px;
+    background-color: rgba(24, 23, 23,0.8);
+    z-index: 7;
+    justify-content: center;
+    align-items: center
+
+}
+.gravarJogador-box{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(24, 23, 23);
+    width:  210px ;
+    height: 150px;
+    padding: 2px;
+    border: 1px solid rgb(13, 226, 13);
+   
+    
+    text-align: center;
+    align-items: center;
+}
+.gravarJogador-box h5{
+    margin-top: 10px;
+}
+.gravarJogador-input{
+    all: unset;
+    padding: 2px;
+    font-size: 11px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgb(24, 23, 23);
+    border: 1px solid rgb(13, 226, 13);
+
+}
+.botaoGravar{
+    width: 70px;
+   
+    
+    padding: 2px;
+    font-size: 11px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgb(24, 23, 23);
+    border: 1px solid rgb(13, 226, 13);
+    box-shadow: 0px 0px 5px rgb(13, 226, 13);
+}
+ .botaoGravar:hover{
+    background-color: rgb(82, 79, 79);
+    box-shadow: 1px 1px 10px rgb(13, 226, 13);
+ }
+
+
+
+.instrucoes{
+    display:flex;
+    width: 100vw;
+    height: 70vh;
+    background-color: rgb(24, 23, 23);
+    z-index: 1;
+    position:absolute;
+    margin-top: 37px;
+
+}
+.instrucoes-texto{
+    
+    text-align: center;
+    
+    font-size: 8px;
+    line-height: 24px;
+    letter-spacing: 5px;
+    
+    
+}
+.instrucoes-texto button{
+    all:unset;
+    background-color: rgb(24, 23, 23);
+    box-sizing: border-box;
+    padding: 2px 5px;
+    border:1px solid rgb(13, 226, 13);
+    text-decoration: none;
+}
+.instrucoes-texto button:hover{
+    background-color: rgb(13, 226, 13);
+    color:#fff;
+}
+
+.instrucoes-rankin{
+    margin-top: 20px;
+    text-decoration: none;
+}
+.conteiner{
+    display: none;
+    width: 100vw;
+    height: 70vh;
+    background-image:url(images/wallpaperbetter.jpg);
+   
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    
+}
+
+
+.linha-tabela{
+    width: 100px;
+    height: 20px;
+    background-color: blueviolet;
+}
+.inimigos{
+    display: flex;
+    flex-direction: column;
+}
+.deathStar{
+        width: 45px;
+        height: 45px;
+        
+        border-radius: 50%;
+
+       
+        box-shadow: 0px 0px 25px rgb(191 204 117);
+        animation: mymove 2s infinite;
+        
+}
+@keyframes mymove {
+    0% {box-shadow: 0px 0px 25px rgb(191 204 117);}
+    25% {box-shadow: 0px 0px 36px rgb(187, 93, 86);}
+    75% {box-shadow: 0px 0px 25px rgb(191 204 117);}
+  }
+
+.deathStar img{
+    width: 52px;
+    height: 52px;
+    margin-left: -3px;
+    margin-top: -2px;
+}
+
+
+
+.vida{
+    display: none;
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    margin-top: 60px;
+    z-index: 2;
+    flex-direction: column;
+    
+}
+.vida1{
+    display: flex;
+}
+.vida2{
+    display: flex;
+}
+.vida3{
+    display: flex;
+}
+.vida h3{
+    font-size: 12px;
+}
+
+.box{
+    width: 60px;
+    height: 20px;
+    background-color: rgb(13, 226, 13);
+    margin: 5px 5px;
+
+}
+.score{
+    display: none;
+    position: absolute;
+    justify-content: flex-end;
+    width:100vw;
+    height: 100px;
+    margin-left:-10px;
+    z-index: 2;
+    margin-top: 60px;
+}
+
+.comandos{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    
+    width: 100vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.comandos button{
+    all: unset;
+    background-color: rgb(24, 23, 23);
+    font-size: 8px;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 5px;
+    width: 100px;
+    height: 30px;
+    margin: 8px;
+    border: 1px solid  rgb(13, 226, 13);
+
+}
+.comandos button:hover{
+    
+    background-color: rgb(95, 93, 93);
+    
+
+}
+.respostaInimigo{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(24, 23, 23);
+    width:  190px ;
+    height: 50px;
+    padding: 2px;
+    border: 1px solid rgb(13, 226, 13);
+    margin-top: 57px;
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+}
+.resultadoDaBatalhaGanha{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(76, 205, 50);
+    color:rgb(24, 23, 23);
+    width:  190px ;
+    height: 60px;
+    padding: 2px;
+    box-shadow: 1px 1px 5px rgb(76, 205, 50);
+    margin-top: 180px;
+    text-align: center;
+    align-items: center;
+}
+.resultadoDaBatalhaGanha h3{
+    color:rgb(24, 23, 23);
+    font-size: 14px;
+}
+
+.resultadoDaBatalhaPerde h3{
+    color:rgb(24, 23, 23);
+    font-size: 14px;
+}
+.resultadoDaBatalhaPerde{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(205, 50, 50);
+    color:rgb(24, 23, 23);
+    width:  190px ;
+    height: 60px;
+    padding: 2px;
+    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+    margin-top: 180px;
+    text-align: center;
+    align-items: center;
+}
+.resultadoDaBatalhaPerde button{
+    all: unset;
+    font-size: 10px;
+    padding: 2px 10px;
+    margin-top: 18px;
+    color:rgb(248, 8, 8);
+    background-color: rgb(238, 170, 170);
+}
+
+.resultadoDaBatalhaGanha button{
+    all: unset;
+    font-size: 10px;
+    padding: 2px 10px;
+    margin-top: 18px;
+    color:rgb(4, 156, 4);
+    background-color: rgb(194, 243, 197);
+}
+
+.respostaInimigo button{
+    all: unset;
+    background-color: rgb(24, 23, 23);
+    font-size: 8px;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 5px;
+    width: 42px;
+    height: 23px;
+    margin: 8px;
+    border: 1px solid  rgb(13, 226, 13);
+
+}
+.vitoria{
+    display: none;
+    position: absolute;
+    background-color: rgba(95, 93, 93, 0.8);
+    width:  190px ;
+    height: 65px;
+    padding: 2px;
+    border: 1px solid rgb(13, 226, 13);
+    margin-top: 230px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.vitoria p{
+    margin-top: 6px;
+    margin-bottom: -4px;
+}
+.vitoria button{
+    all: unset;
+    width: 25px;
+    font-size: 10px;
+    padding: 2px 10px;
+    
+    color:rgb(4, 156, 4);
+    background-color: rgb(194, 243, 197);
+}
+.derrota{
+    display: none;
+    position: absolute;
+    background-color: rgb(205, 50, 50);
+    width:  190px ;
+    height: 65px;
+    padding: 2px;
+    border: 1px solid rgb(13, 226, 13);
+    margin-top: 230px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.derrota p{
+    margin-top: 6px;
+    margin-bottom: -4px;
+}
+.derrota button{
+    all: unset;
+    width: 25px;
+    font-size: 10px;
+    padding: 2px 10px;
+    
+    color:rgb(248, 8, 8);
+    background-color: rgb(238, 170, 170);
+}
+  .tie{
+    width: 50px;
+    height: 50px;
+    background-image: url(images/tie.png);
+    background-size: 46px 46px;
+    background-repeat: no-repeat;
+    margin-top: -32px;
+    margin-left: 0px;
+}
+  
+
+.x-Wing{
+    width: 50px;
+    height: 50px;
+    background-image: url(images/x-Wing.png);
+        background-size: 46px 46px;
+        background-repeat: no-repeat;
+}
+
+.explosaoWing1{
+    display: none;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    margin: -71px -25px;
+    
+    animation: explosao 1s;
+    
+    z-index: 5;
+    
+}
+
+.explosaoWing2{
+    display: none;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    
+    border-radius: 50%;
+    
+    margin: -71px -25px;
+    
+    animation: explosao 1s;
+    
+    z-index: 5;
+    
+}
+.explosaoWing3{
+    display: none;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    
+    border-radius: 50%;
+    
+    margin: -71px -25px;
+    
+    animation: explosao 1s;
+    
+    z-index: 5;
+    
+}
+
+.explosaoDeath1{
+    display: none;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    margin: -70px -25px;
+    
+    animation: explosao 1s;
+    z-index: 5;
+    
+}
+.explosaoDeath2{
+    display: none;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    margin: -70px -25px;
+    
+    
+    animation: explosao 1s;
+    animation-play-state: infinite;
+    z-index: 5;
+    
+}
+.explosaoDeath3{
+    display: none;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    margin: -70px -25px;
+    
+    
+    animation: explosao 1s;
+    
+    z-index: 5;
+    
+}
+
+.animacaoVitoria{
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    background-image:url(images/wallpaperbetter.jpg);
+   
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    
+}
+
+@keyframes explosao {
+0% {background-image: url(images/explosao1/bum1.png);}
+11% {background-image: url(images/explosao1/bum2.png);}
+22% {background-image: url(images/explosao1/bum3.png);}
+33% {background-image: url(images/explosao1/bum4.png);}
+44% {background-image: url(images/explosao1/bum5.png);}
+55% {background-image: url(images/explosao1/bum6.png);}
+66% {background-image: url(images/explosao1/bum7.png);}
+77% {background-image: url(images/explosao1/bum8.png);}
+88% {background-image: url(images/explosao1/bum9.png);}
+}
+.destuindo-wing{
+    display: none;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px 50px;
+   /* border-radius: 50%;*/
+        /*background-color: yellow;*/
+    margin: -70px -25px;
+    
+    
+    animation: explosaoFinal 4s;
+    
+    z-index: 5;
+}
+.destuindo-death{
+    display: none;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px 50px;
+   /* border-radius: 50%;*/
+        /*background-color: yellow;*/
+    margin: -70px -25px;
+    
+    
+    animation: explosaoFinal 4s infinite;
+    
+    z-index: 5;
+}
+
+@keyframes explosaoFinal {
+    0% {background-image: url(images/explosão.png);transform: scale(0.2);}
+    100% {background-image: url(images/explosão.png);transform: scale(2);}
+    }
+
+
+
+
+@media only screen and (min-width: 700px) {
+    
+        .instrucoes-texto{
+            
+            font-size: 20px;
+            line-height: 41px;
+            letter-spacing: 7px;
+            
+        }
+
+        .deathStar{
+            width: 100px;
+            height: 100px;
+            
+            border-radius: 50%;
+    
+           
+            box-shadow: 0px 0px 25px rgb(191 204 117);
+            animation: mymove 2s infinite;
+            
+    }
+    .deathStar img{
+        width: 115px;
+    height: 115px;
+    margin-left: -6px;
+    margin-top: -4px;
+    }
+    .tie{
+        width: 70px;
+        height: 70px;
+        background-size: 80px 80px;
+        }
+
+  
+        .box{
+            width: 100px;
+            height: 30px;
+            
+        }
+        .comandos button{
+            
+            font-size: 12px;
+            
+            line-height: 24px;
+            letter-spacing: 5px;
+            width: 160px;
+            height: 34px;
+           
+           
+        
+        }
+        .explosao{
+            
+        
+            margin: -131px -1px;
+            
+           
+            
+        }
+        .explosaoWing1{
+            margin: -86px -29px;
+            
+        }
+        .explosaoWing2{
+            margin: -86px -29px;
+            
+        }
+        .explosaoWing3{
+            margin: -86px -29px;
+            
+        }
+        .explosaoDeath1{
+            margin: -20px -7px;
+            
+        }
+        .explosaoDeath2{
+            margin: -20px -7px;
+            
+        }
+        .explosaoDeath3{
+            margin: -20px -7px;
+            
+        }
+        .respostaInimigo{
+            margin-left: 0px;
+        }
+
+        .tie{
+        
+            margin-top: 6px;
+            margin-left: 0px;
+        }
+
+       
+  }
